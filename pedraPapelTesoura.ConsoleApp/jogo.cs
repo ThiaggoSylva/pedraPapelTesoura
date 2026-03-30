@@ -101,12 +101,20 @@ public static class Jogo
     private static void ExibirJogadas(int j1, int j2, int modo)
     {
         Console.WriteLine($"\nJogador 1: {JogadaHelper.ObterNome(j1)}");
+        JogadaHelper.ExibirDesenho(j1);
 
         if (modo == 1)
-            Console.WriteLine($"Computador: {JogadaHelper.ObterNome(j2)}");
+            {Console.WriteLine($"Computador: {JogadaHelper.ObterNome(j2)}");
+            JogadaHelper.ExibirDesenho(j2);
+            }
         else
+        {
             Console.WriteLine($"Jogador 2: {JogadaHelper.ObterNome(j2)}");
+            JogadaHelper.ExibirDesenho(j2);
+        }
     }
+
+    
 
     // 🎨 Resultado com cor
     private static void ExibirResultadoColorido(string resultado)
