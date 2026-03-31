@@ -41,7 +41,7 @@ public static class Jogo
         RankingHelper.SalvarResultado(campeao);
     }
 
-    private static int EscolherModoJogo()
+    static int EscolherModoJogo()
     {
         while (true)
         {
@@ -58,7 +58,7 @@ public static class Jogo
         }
     }
 
-    private static int EscolherModoSerie()
+    static int EscolherModoSerie()
     {
         while (true)
         {
@@ -75,7 +75,7 @@ public static class Jogo
         }
     }
 
-    private static int LerJogada(string jogador)
+    static int LerJogada(string jogador)
     {
         while (true)
         {
@@ -93,12 +93,12 @@ public static class Jogo
         }
     }
 
-    private static int GerarJogadaComputador()
+    static int GerarJogadaComputador()
     {
         return new Random().Next(1, 4);
     }
 
-    private static void ExibirJogadas(int j1, int j2, int modo)
+    static void ExibirJogadas(int j1, int j2, int modo)
     {
         Console.WriteLine($"\nJogador 1: {JogadaHelper.ObterNome(j1)}");
         JogadaHelper.ExibirDesenho(j1);
@@ -115,9 +115,7 @@ public static class Jogo
     }
 
     
-
-    // 🎨 Resultado com cor
-    private static void ExibirResultadoColorido(string resultado)
+    static void ExibirResultadoColorido(string resultado)
     {
         if (resultado.Contains("1"))
             Console.ForegroundColor = ConsoleColor.Green;
@@ -130,7 +128,7 @@ public static class Jogo
         Console.ResetColor();
     }
 
-    private static void ExibirPlacar(int p1, int p2)
+    static void ExibirPlacar(int p1, int p2)
     {
         Console.WriteLine($"Placar: {p1} x {p2}\n");
     }

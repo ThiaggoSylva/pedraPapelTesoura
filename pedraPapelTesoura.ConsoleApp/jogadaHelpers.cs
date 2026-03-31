@@ -9,7 +9,7 @@ public static class JogadaHelper
 
     public static void ExibirDesenho(int jogada)
 {
-    if (jogada == 1) // Pedra
+    if (jogada == 1) 
     {
         Console.WriteLine(@"
     _______
@@ -20,7 +20,7 @@ public static class JogadaHelper
 ---.__(___)
 ");
     }
-    else if (jogada == 2) // Papel
+    else if (jogada == 2) 
     {
         Console.WriteLine(@"
      _______
@@ -31,7 +31,7 @@ public static class JogadaHelper
 ---.__________)
 ");
     }
-    else // Tesoura
+    else 
     {
         Console.WriteLine(@"
     _______

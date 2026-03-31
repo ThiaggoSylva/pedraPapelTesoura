@@ -3,7 +3,7 @@ using System.IO;
 
 public static class RankingHelper
 {
-    private static string caminho = "ranking.txt";
+    static string caminho = "ranking.txt";
 
     public static void SalvarResultado(string vencedor)
     {
