@@ -23,7 +23,7 @@ public static class Jogo
 
             ExibirJogadas(jogador1, jogador2, modoJogo);
 
-            string resultado = ResultadoHelper.VerificarVencedor(jogador1, jogador2);
+            string resultado = Resultado.VerificarVencedor(jogador1, jogador2);
 
             if (resultado == "Jogador 1 venceu!")
                 pontos1++;
@@ -38,7 +38,7 @@ public static class Jogo
 
         Console.WriteLine($"\n🏆 {campeao} venceu a partida!");
 
-        RankingHelper.SalvarResultado(campeao);
+        Ranking.SalvarResultado(campeao);
     }
 
     static int EscolherModoJogo()
@@ -100,17 +100,17 @@ public static class Jogo
 
     static void ExibirJogadas(int j1, int j2, int modo)
     {
-        Console.WriteLine($"\nJogador 1: {JogadaHelper.ObterNome(j1)}");
-        JogadaHelper.ExibirDesenho(j1);
+        Console.WriteLine($"\nJogador 1: {Jogada.ObterNome(j1)}");
+        Jogada.ExibirDesenho(j1);
 
         if (modo == 1)
-            {Console.WriteLine($"Computador: {JogadaHelper.ObterNome(j2)}");
-            JogadaHelper.ExibirDesenho(j2);
+            {Console.WriteLine($"Computador: {Jogada.ObterNome(j2)}");
+            Jogada.ExibirDesenho(j2);
             }
         else
         {
-            Console.WriteLine($"Jogador 2: {JogadaHelper.ObterNome(j2)}");
-            JogadaHelper.ExibirDesenho(j2);
+            Console.WriteLine($"Jogador 2: {Jogada.ObterNome(j2)}");
+            Jogada.ExibirDesenho(j2);
         }
     }
 
