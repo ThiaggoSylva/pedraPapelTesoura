@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-public static class RankingHelper
+public static class Ranking
 {
     static string caminho = "ranking.txt";
 

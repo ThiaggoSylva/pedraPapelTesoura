@@ -1,4 +1,4 @@
-public static class ResultadoHelper
+public static class Resultado
 {
     public static string VerificarVencedor(int j1, int j2)
     {

@@ -1,4 +1,4 @@
-public static class JogadaHelper
+public static class Jogada
 {
     public static string ObterNome(int jogada)
     {
